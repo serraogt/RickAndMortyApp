@@ -17,6 +17,13 @@
   display: block;
   margin-top:  0;
   color: w;
+  top: 20;
+  position: relative;
+  left: 46%;
+  top: -46%;
+  font-size: 300%;
+  
+
 
 }
 

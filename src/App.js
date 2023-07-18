@@ -1,10 +1,10 @@
 import "./App.css";
 import Planet from './components/planets.jsx';
 import PlanetPic from "./components/planetpic.jsx";
-import Sun from './components/sun.jsx';
 import World from "./assets/earth.png";
 import Mars from "./assets/mars.png";
 import React from "react";
+import Sun from "./components/sun.jsx"
 
 function ColorfulText({ children }) {
   return <span style={{ color: "burlywood" }}>{children}</span>;
@@ -13,8 +13,7 @@ function ColorfulText({ children }) {
 function App() {
   return (
     <div
-      class
-      Name="App" 
+      className="App" 
       style={{backgroundSize: "cover" }}
       id="myClass" >
         <div className="welcome">
@@ -24,9 +23,8 @@ function App() {
       </div>
       <div>
       <PlanetPic planetPicture={World}></PlanetPic>
-      
+      <Sun></Sun>
       </div>
-  
 
      {/*
       <Planet planetNumber="4" planetName="Mars"  ></Planet>

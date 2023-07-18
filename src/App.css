@@ -1,0 +1,42 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-image: url(https://cdn.mos.cms.futurecdn.net/2cnKDAMmEsjvQoCynwPkX-1200-80.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome {
+  display: block;
+  margin-top:  0;
+  color: w;
+
+}
+
+.Planet {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.Planet img {
+  margin-right: 10px;
+}
+
+.character-label{
+  padding: 1em;
+  color:cadetblue;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: 400;
+}
+

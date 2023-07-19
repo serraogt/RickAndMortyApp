@@ -24,6 +24,7 @@ function App() {
       <div>
       <PlanetPic planetPicture={World}></PlanetPic>
       <Sun></Sun>
+      <h3>swipe</h3>
       </div>
 
      {/*

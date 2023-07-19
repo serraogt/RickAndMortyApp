@@ -1,16 +1,47 @@
 import "./App.css";
 import Planet from './components/planets.jsx';
-import PlanetPic from "./components/planetpic.jsx";
+import PlanetPicture from "./components/planetpic.jsx";
 import World from "./assets/earth.png";
 import Mars from "./assets/mars.png";
 import React from "react";
 import Sun from "./components/sun.jsx"
+import Mercure from "./assets/mercure.png";
 
 function ColorfulText({ children }) {
   return <span style={{ color: "burlywood" }}>{children}</span>;
 }
 
+
+
 function App() {
+  const planets=[
+    { id:0,
+      planetPicture: Mercure,
+      planetNumber : 1,
+      planetName: "Mercure",
+      oneYear: "88 Earth days"
+  },
+  {
+    id:1,
+    planetPicture:null,
+     planetNumber: 2,
+     planetName: "Venus",
+     oneYear: "224 Earth days"
+  },
+  { id:2,
+    planetPicture: World,
+    planetNumber: 3,
+    planetName:"Earth",
+    oneYear: "365 Earth days"
+  },
+  { id:3,
+    planetPicture: Mars,
+    planetNumber: 4,
+    planetName:"Mars",
+    oneYear: "687 Earth days"}
+
+
+]
   return (
     <div
       className="App" 
@@ -19,12 +50,12 @@ function App() {
         <div className="welcome">
         <ColorfulText>Welcome!</ColorfulText></div>
         <div>
-      <Planet planetNumber="3" planetName="Earth" ></Planet>
+      <Planet planetNumber={planets[0].planetNumber} planetName={planets[0].planetName} oneYear={planets[0].oneYear}></Planet>
       </div>
       <div>
-      <PlanetPic planetPicture={World}></PlanetPic>
+      <PlanetPicture planetPicture={planets[0].planetPicture}></PlanetPicture>
       <Sun></Sun>
-      <h3>swipe</h3>
+      <h3>Swipe!</h3>
       </div>
 
      {/*

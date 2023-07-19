@@ -21,7 +21,7 @@
   position: relative;
   left: 46%;
   top: -46%;
-  font-size: 300%;
+  font-size: flex;
   
 
 
@@ -47,3 +47,7 @@
   font-weight: 400;
 }
 
+h3{
+  -webkit-writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}

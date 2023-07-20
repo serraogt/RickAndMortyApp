@@ -3,17 +3,20 @@ import Planet from './components/planets.jsx';
 import PlanetPicture from "./components/planetpic.jsx";
 import World from "./assets/earth.png";
 import Mars from "./assets/mars.png";
-import React from "react";
+import React, {useState} from "react";
 import Sun from "./components/sun.jsx"
 import Mercure from "./assets/mercure.png";
+import Venus from "./assets/venus.png";
 
+const App=()=>{
 function ColorfulText({ children }) {
-  return <span style={{ color: "burlywood" }}>{children}</span>;
-}
+  return <span style={{ color: "burlywood" }}>{children}</span>;}
 
+const[current,setCurrent]= useState (0);
+const nextPageHandler = () => {
+    setCurrent((current) => (current + 1) % planets.length);
+  };
 
-let n = " _ ";
-function App() {
   const planets=[
     { id:0,
       planetPicture: Mercure,
@@ -23,7 +26,7 @@ function App() {
   },
   {
     id:1,
-    planetPicture:null,
+    planetPicture:Venus,
      planetNumber: 2,
      planetName: "Venus",
      oneYear: "224 Earth days"
@@ -38,10 +41,9 @@ function App() {
     planetPicture: Mars,
     planetNumber: 4,
     planetName:"Mars",
-    oneYear: "687 Earth days"}
+    oneYear: "687 Earth days"}]
 
 
-]
   return (
     <div
       className="App" 
@@ -50,20 +52,16 @@ function App() {
         <div className="welcome">
         <ColorfulText>Welcome!</ColorfulText></div>
         <div>
-          <div><h2 className="swipe">Swipe for the {n}th planet!</h2></div>
-      <Planet planetNumber={planets[0].planetNumber} planetName={planets[0].planetName} oneYear={planets[0].oneYear}></Planet>
+          <div><h2 className="swipe">Swipe for the {current}th planet!</h2></div>
+      <Planet planetNumber={planets[current].planetNumber} planetName={planets[current].planetName} oneYear={planets[current].oneYear}></Planet>
       </div>
       <div>
-      <PlanetPicture planetPicture={planets[0].planetPicture}></PlanetPicture>
+      <PlanetPicture planetPicture={planets[current].planetPicture}></PlanetPicture>
       <Sun></Sun>
       </div>
-
-     {/*
-      <Planet planetNumber="4" planetName="Mars"  ></Planet>
-  <PlanetPic planetPicture={Mars}></PlanetPic> */}
+      <button onClick={nextPageHandler}> Jump into the next page!</button>
     
     </div>
   );
-}
-
+  }
 export default App;

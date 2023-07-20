@@ -12,7 +12,7 @@ function ColorfulText({ children }) {
 }
 
 
-
+let n = " _ ";
 function App() {
   const planets=[
     { id:0,
@@ -50,12 +50,12 @@ function App() {
         <div className="welcome">
         <ColorfulText>Welcome!</ColorfulText></div>
         <div>
+          <div><h2 className="swipe">Swipe for the {n}th planet!</h2></div>
       <Planet planetNumber={planets[0].planetNumber} planetName={planets[0].planetName} oneYear={planets[0].oneYear}></Planet>
       </div>
       <div>
       <PlanetPicture planetPicture={planets[0].planetPicture}></PlanetPicture>
       <Sun></Sun>
-      <h3>Swipe!</h3>
       </div>
 
      {/*

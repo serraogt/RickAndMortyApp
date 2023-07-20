@@ -47,7 +47,11 @@
   font-weight: 400;
 }
 
-h3{
+.swipe{
   -webkit-writing-mode: vertical-rl;
   transform: rotate(180deg);
+  position: absolute;
+  left: 1%;
+  color: black;
+
 }

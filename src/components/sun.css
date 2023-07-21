@@ -7,3 +7,18 @@ body{overflow-y: hidden;}
     bottom: -50px;
     overflow: hidden;
 }
+
+.sunImg:hover{
+
+    -webkit-filter: drop-shadow(0px 0px 5px cyan);
+    filter: drop-shadow(0px 0px 5px cyan);
+    
+margin: 100px auto;
+opacity: 100%;
+-webkit-filter: brightness(120%);
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}

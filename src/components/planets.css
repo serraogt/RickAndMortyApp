@@ -8,10 +8,12 @@
     font-size: 1.25rem;
     padding: 0.5rem 0.5rem;
     background-color: #8d98a9;
+    height: 50px;
   }
 
 h2{
     color: wheat;
+    font-size: 10 px;
 }
 
 h1{

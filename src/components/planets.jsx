@@ -16,7 +16,7 @@ function Planet({planetName, planetNumber, oneYear}) {
       </div>
 
       <div className="planet_namebox">  
-      <h2>One year here lasts {oneYear} </h2>
+      <h2>1 year here lasts {oneYear} </h2>
        </div>
 
       <div className="next_planet"></div>

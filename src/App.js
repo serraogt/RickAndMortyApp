@@ -55,7 +55,7 @@ const nextPageHandler = () => {
       </div>
       <div>
       <PlanetPicture planetPicture={planets[current].planetPicture}></PlanetPicture>
-      <Sun></Sun>
+      <Sun>Click moi</Sun>
       </div>
       <img alt="arrow" className="nextOperator" onClick={nextPageHandler} src={arrow}/>
     

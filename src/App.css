@@ -1,85 +1,90 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .App {
-  font-family: sans-serif;
-  text-align: center;
-  background-image: url(https://cdn.mos.cms.futurecdn.net/2cnKDAMmEsjvQoCynwPkX-1200-80.jpg);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  background-image: url("https://cdn.mos.cms.futurecdn.net/2cnKDAMmEsjvQoCynwPkX-1200-80.jpg");
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+  color: white;
 }
 
 .welcome {
-  display: block;
-  margin-top:  0;
-  color: mistyrose;
-  top: 20;
-  position: relative;
-  left: 46%;
-  top: -46%;
-  font-size: flex;
-}
-
-.Planet {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  width: 50%;
-}
-
-.Planet img {
-  margin-right: 10px;
-}
-
-.character-label{
-  height: max-content;
-  width: max-content;
-  padding: 0.5em;
-  color:cadetblue;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 20px;
-  font-weight: 40;
-}
-
-.swipe{
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: absolute;
-  left: 1%;
-  color: black;
-}
-
-.nextOperator{
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  height: 100px;
-}
-
-.backGrName{
-  position: absolute;
-  color: rgba(0, 0, 0, 0.2);
-  font-size: 600px;
+  font-size: 48px;
+  margin-bottom: 20px;
   text-transform: uppercase;
-  -webkit-box-pack: center;
-  justify-content: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.planet_container {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  z-index: -1;
-  font-family: system-ui;
-  white-space: nowrap;
-  position: absolute;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+}
+
+.planet_info {
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.planet_name {
+  font-size: 24px;
   font-weight: bold;
-  inset: 0px;
+}
+
+.planet_number {
+  font-size: 18px;
+}
+
+.planet_year {
+  font-size: 18px;
+}
+
+.nextOperator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nextOperator:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.nextOperator img {
+  height: 50px;
+}
+
+.planetPicContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planetPicContainer img {
+  width: 296px;
+  height: 296px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.planetPicContainer img:hover {
+  transform: scale(1.1);
 }

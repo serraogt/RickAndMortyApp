@@ -1,13 +1,15 @@
-import "./App.css";
+// App.js
 import React, { useState } from "react";
-import Planet from './components/Planet.jsx';
-import PlanetPicture from "./components/PlanetPicture.jsx";
-import Sun from "./components/Sun.jsx"
+import "./App.css";
+import Planet from "./components/Planet";
+import PlanetPicture from "./components/PlanetPicture";
+import Sun from "./components/Sun";
 import arrow from "./assets/white-down-arrow-png-2.png";
 import planetsData from "./data/PlanetsData";
 
 const App = () => {
   const [current, setCurrent] = useState(0);
+
   const nextPageHandler = () => {
     setCurrent((current) => (current + 1) % planetsData.length);
   };
@@ -15,25 +17,18 @@ const App = () => {
   return (
     <div className="App">
       <div className="welcome">WELCOME!</div>
-      <div className="backGrName">{planetsData[current].planetName} </div>
-      <div>
-        <div>
-          <h2 className="swipe">
-            Tap for the {(current + 1) % planetsData.length + 1}th planet!
-          </h2>
+      <div className="planet_container">
+        <div className="planet_info">
+          <Planet planetData={planetsData[current]} />
+          <div className="nextOperator" onClick={nextPageHandler}>
+            <img alt="arrow" src={arrow} />
+          </div>
         </div>
-        <Planet planetData={planetsData[current]} />
+        <div className="planetPicContainer">
+          <PlanetPicture planetPicture={planetsData[current].planetPicture} />
+        </div>
       </div>
-      <div>
-        <PlanetPicture planetPicture={planetsData[current].planetPicture} />
-        <Sun>Click me</Sun>
-      </div>
-      <img
-        alt="arrow"
-        className="nextOperator"
-        onClick={nextPageHandler}
-        src={arrow}
-      />
+      <Sun>Click me</Sun>
     </div>
   );
 };

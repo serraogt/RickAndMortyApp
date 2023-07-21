@@ -1,9 +1,0 @@
-.planet__pic{
-    display: flex;
-    position: static;
-    justify-content: left;
-    align-items: normal;
-    padding: 0.5rem;
-    margin: 2rem 15rem;
-    border-radius: 12px;
-  }

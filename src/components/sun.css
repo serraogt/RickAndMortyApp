@@ -1,24 +1,17 @@
-body{overflow-y: hidden;}
+/* components/Sun.css */
 
-.sunImg{ 
-    position: absolute; 
+.sunImg {
+    position: absolute;
     opacity: 0.5;
     left: 30px;
     bottom: -50px;
     overflow: hidden;
-}
-
-.sunImg:hover{
-
-    -webkit-filter: drop-shadow(0px 0px 5px cyan);
+    transition: all 1s ease;
+  }
+  
+  .sunImg:hover {
     filter: drop-shadow(0px 0px 5px cyan);
-    
-margin: 100px auto;
-opacity: 100%;
--webkit-filter: brightness(120%);
--webkit-transition: all 1s ease;
--moz-transition: all 1s ease;
--o-transition: all 1s ease;
--ms-transition: all 1s ease;
-transition: all 1s ease;
-}
+    margin: 100px auto;
+    opacity: 100%;
+    filter: brightness(120%);
+  }

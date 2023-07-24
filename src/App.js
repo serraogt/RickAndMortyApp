@@ -6,6 +6,7 @@ import PlanetPicture from "./components/PlanetPicture";
 import Sun from "./components/Sun";
 import arrow from "./assets/white-down-arrow-png-2.png";
 import planetsData from "./data/PlanetsData";
+import { Button } from "@mui/material";
 
 const App = () => {
   const [current, setCurrent] = useState(0);
@@ -28,7 +29,9 @@ const App = () => {
           <PlanetPicture planetPicture={planetsData[current].planetPicture} />
         </div>
       </div>
-      <Sun>Click me</Sun>
+      <Sun>
+      Sun Rising :)
+      </Sun>
     </div>
   );
 };

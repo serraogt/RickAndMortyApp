@@ -7,7 +7,7 @@ const Sun = ({ children }) => {
   return (
     <div className="sunImg">
       <img alt="sun" src={gunes} height={200} width={200} />
-      {children}
+      <Button> merhaba</Button>
     </div>
   );
 };

@@ -1,17 +1,17 @@
 /* components/Sun.css */
 
 .sunImg {
-    position: absolute;
-    opacity: 0.5;
-    left: 30px;
-    bottom: -50px;
-    overflow: hidden;
-    transition: all 1s ease;
-  }
-  
-  .sunImg:hover {
-    filter: drop-shadow(0px 0px 5px cyan);
-    margin: 100px auto;
-    opacity: 100%;
-    filter: brightness(120%);
-  }
+  position: absolute;
+  opacity: 0.5;
+  left: 30px;
+  bottom: -50px;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.sunImg:hover {
+  filter: drop-shadow(0px 0px 5px cyan);
+  margin: 100px auto;
+  opacity: 100%;
+  filter: brightness(120%);
+}

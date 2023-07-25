@@ -1,5 +1,4 @@
 /* App.css */
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,30 +26,12 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.planet_container {
-  display: flex;
-  align-items: center;
-}
-
 .planet_info {
   padding: 20px;
   margin: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.planet_name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.planet_number {
-  font-size: 18px;
-}
-
-.planet_year {
-  font-size: 18px;
 }
 
 .nextOperator {

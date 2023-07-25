@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="welcome">WELCOME!</div>
+      <div className="welcome">Planets</div>
       <div className="planet_container">
         <div className="planet_info">
           <Planet planetData={planetsData[current]} />
@@ -29,9 +29,7 @@ const App = () => {
           <PlanetPicture planetPicture={planetsData[current].planetPicture} />
         </div>
       </div>
-      <Sun>
-      Sun Rising :)
-      </Sun>
+      <Sun>Sun Rising :)</Sun>
     </div>
   );
 };

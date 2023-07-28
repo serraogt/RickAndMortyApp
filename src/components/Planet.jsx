@@ -7,16 +7,18 @@ const Planet = ({ planetData }) => {
 
   return (
     <div>
-      <div className="planet_namebox">
+      <ul>
+      <li className="planet_namebox">
         <h2>{planetName}</h2>
-      </div>
-      <div className="planet_namebox">
+      </li>
+      <li className="planet_namebox">
         <h2>Planet Number is: {planetNumber}</h2>
-      </div>
-      <div className="planet_namebox">
+      </li>
+      <li className="planet_namebox">
         <h2>1 year here lasts {oneYear} </h2>
-      </div>
+      </li>
       <div className="next_planet"></div>
+      </ul>
     </div>
   );
 };

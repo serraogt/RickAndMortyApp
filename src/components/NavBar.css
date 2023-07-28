@@ -1,0 +1,28 @@
+.nav{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    position:absolute;
+    left: 3%;
+    color: wheat;
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.nav a{
+    text-underline-offset: 0;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    color: wheat;
+    font-size: 2rem;
+    transition: all 1s ease;
+    transform-origin: center;
+    left: 5%;
+    transform: translateX(-50%);
+}
+
+.nav a:hover{
+    font-size: 3rem;
+
+}

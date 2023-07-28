@@ -1,8 +1,7 @@
 .App {
   font-family: sans-serif;
-
   text-align: center;
-  background-image: url(https://cdn.mos.cms.futurecdn.net/2cnKDAMmEsjvQoCynwPkX-1200-80.jpg), linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: url(https://cdn.mos.cms.futurecdn.net/2cnKDAMmEsjvQoCynwPkX-1200-80.jpg);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,9 +11,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat ;
   background-size: cover;
-
 }
 
 .welcome {
@@ -51,12 +49,11 @@
 }
 
 .swipe{
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  position: absolute;
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
+  position:absolute;
   left: 1%;
-  color: black;
+  color: wheat;
 }
 
 .nextOperator{

@@ -7,7 +7,7 @@ function NavBar(){
     return<nav className="nav">
     <Link to="/home" className="home"></Link>
     <li>
-    <CustomLink to="/addNew" className="add">Add new?!</CustomLink>
+    <CustomLink to="/add-new" className="add">Add new?!</CustomLink>
     </li>
     </nav>
 

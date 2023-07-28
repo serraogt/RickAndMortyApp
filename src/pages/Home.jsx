@@ -8,13 +8,14 @@ import planetsData from "../data/PlanetsData";
 import NavBar from "../components/NavBar";
 import { Switch } from "@mui/material";
 import AddNew from "./AddNew";
+import { Link } from "react-router-dom"; 
 
 
  function Home(){
 
    const [current, setCurrent] = useState(0);
    const nextPageHandler = () => {
-     setCurrent((current) => (current + 1) % planetsData.length);
+      setCurrent((prevCurrent) => (prevCurrent + 1) % planetsData.length);
    };
 
 
@@ -23,7 +24,9 @@ import AddNew from "./AddNew";
     <div className="welcome">HOME</div>
     <div className="backGrName">{planetsData[current].planetName} </div>
     <div>
-     <div> <NavBar></NavBar> </div>
+     <div>  <Link to="/add-new" className="addNewLink">
+        Add New?!
+      </Link> </div>
       <div>   
     
           {/*Tap for the {(current + 1) % planetsData.length + 1}th planet!*/}

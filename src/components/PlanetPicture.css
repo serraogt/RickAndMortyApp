@@ -1,7 +1,7 @@
 /* components/PlanetPicture.css */
 
 .planet__pic {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;

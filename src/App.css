@@ -46,9 +46,11 @@
   text-align: left;
   font-size: 20px;
   font-weight: 40;
+  position: static;
+  left: 50;
 }
 
-.swipe{
+.AddNewLink{
   -webkit-writing-mode: vertical-lr;
   writing-mode: vertical-lr;
   position:absolute;

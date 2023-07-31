@@ -1,13 +1,10 @@
-import "../App.css";
+import "./Home.css";
 import React, { useState } from "react";
 import Planet from '../components/Planet.jsx';
 import PlanetPicture from "../components/PlanetPicture.jsx";
 //import Sun from "../components/sun.jsx";
 import arrow from "../assets/white-down-arrow-png-2.png";
 import planetsData from "../data/PlanetsData";
-import NavBar from "../components/NavBar";
-import { Switch } from "@mui/material";
-import AddNew from "./AddNew";
 import { Link } from "react-router-dom"; 
 
 
@@ -20,7 +17,7 @@ import { Link } from "react-router-dom";
 
 
     return(  
-        <div className="Home">
+    <div className="Home">
     <div className="welcome">HOME</div>
     <div className="backGrName">{planetsData[current].planetName} </div>
     <div>

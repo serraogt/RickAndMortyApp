@@ -1,13 +1,14 @@
 /* components/PlanetPicture.css */
 
 .planet__pic {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
   margin: 2rem 15rem;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+ 
+  
 }
 
 .planet__pic img {
